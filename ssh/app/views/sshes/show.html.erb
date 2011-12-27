@@ -1,0 +1,31 @@
+<p>
+<tr>
+    <td><%= I18n.t 'Name:' %></td>
+   <td><%=h @ssh.name %></td>
+</tr>
+</p>
+
+<p>
+<tr>
+    <td><%= I18n.t 'Phone number:' %></td>
+   <td><%=h @ssh.phone_number %></td>
+</tr>
+</p>
+
+<p>
+<tr>
+    <td><%= I18n.t 'Email:' %></td>
+   <td><%=h @ssh.Email_id %></td>
+</tr>
+</p>
+
+<p>
+<tr>
+    <td>Ssh key:</td>
+   <td><%=h @ssh.ssh_key %></td>
+</tr>
+</p>
+
+<%= link_to 'Edit', edit_ssh_path(@ssh) %> |
+<%= link_to 'Back', sshes_path %>
+

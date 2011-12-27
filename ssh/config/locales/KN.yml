@@ -1,0 +1,13 @@
+"KN":
+#    login:
+ #       index:
+#            Login: "jhmf"
+            Username: 'ಬಳಕೆದಾರ ಹೆಸರು'
+            Password: 'ಪಾಸ್ವರ್ಡ್'
+
+            Name: 'ಹೆಸರು' 
+            Phone number: 'ಫೋನ್ ಸಂಖ್ಯೆ'
+            Email: 'ಇಮೇಲ್'
+            Logout: 'ಲಾಗ್ಔಟ್'
+
+

@@ -1,0 +1,25 @@
+<h1>Ssh key collector</h1>
+<table>
+  <tr>
+    <th><%= I18n.t 'Name' %></th>
+    <th><%= I18n.t 'Phone number' %></th>
+    <th><%= I18n.t 'Email' %></th>
+    <th>Ssh key</th>
+  </tr>
+
+<% @sshes.each do |ssh| %>
+  <tr>
+    <td><%=h ssh.name %></td>
+    <td><%=h ssh.phone_number %></td>
+    <td><%=h ssh.Email_id %></td>
+    <td><%=h ssh.ssh_key %></td>
+    <td><%= link_to 'Show', ssh %></td>
+    <td><%= link_to 'Edit', edit_ssh_path(ssh) %></td>
+    <td><%= link_to 'Destroy', ssh, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= @sshes.blank? ? (link_to 'New ssh', new_ssh_path) : ""  %>

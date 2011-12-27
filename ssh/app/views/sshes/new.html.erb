@@ -1,0 +1,27 @@
+<h1>New ssh</h1>
+
+<% form_for(@ssh) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :phone_number %><br />
+    <%= f.text_field :phone_number %>
+  </p>
+  <p>
+    Email_id<br />
+    <%= session[:person] %>
+  </p>
+  <p>
+    <%= f.label :ssh_key %><br />
+    <%= f.text_field :ssh_key %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', sshes_path %>
